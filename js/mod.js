@@ -1,6 +1,6 @@
 let modInfo = {
 	name: "Bobbit's Tech Tree",
-	id: "mymod",
+	id: "btt",
 	author: "Bobbitibob",
 	pointsName: "",
 	modFiles: ["layers.js", "tree.js"],
@@ -13,12 +13,13 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.1",
+	num: "0.1.1",
 	name: "Life to human",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<h3>v0.1</h3><br>
+	<h3>v0.1.1</h3><br>
+	    - did the mod id thingy
 		- Added content up to humans.<br>
 		`
 
