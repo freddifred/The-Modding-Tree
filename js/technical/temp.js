@@ -110,7 +110,7 @@ function updateTemp() {
 
 	}
 
-	tmp.pointGen = getPointGen()
+	
 	tmp.backgroundStyle = readData(backgroundStyle)
 
 	tmp.displayThings = []

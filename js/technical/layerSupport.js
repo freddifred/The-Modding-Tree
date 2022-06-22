@@ -77,6 +77,9 @@ function setupLayer(layer){
             }
         }
     }
+    if (layer =="C") {
+        player.C.col = "red"
+    }
     if (layers[layer].milestones){
         for (thing in layers[layer].milestones){
             if (isPlainObject(layers[layer].milestones[thing])){

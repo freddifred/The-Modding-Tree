@@ -69,17 +69,8 @@ var systemComponents = {
 		template: `<div v-bind:style="[tmp[layer].style ? tmp[layer].style : {}, (tmp[layer].tabFormat && !Array.isArray(tmp[layer].tabFormat)) ? tmp[layer].tabFormat[player.subtabs[layer].mainTabs].style : {}]" class="noBackground">
 		<div v-if="back"><button v-bind:class="back == 'big' ? 'other-back' : 'back'" v-on:click="goBack(layer)">←</button></div>
 		<div v-if="!tmp[layer].tabFormat">
-			<div v-if="spacing" v-bind:style="{'height': spacing}" :key="this.$vnode.key + '-spacing'"></div>
-			<infobox v-if="tmp[layer].infoboxes" :layer="layer" :data="Object.keys(tmp[layer].infoboxes)[0]":key="this.$vnode.key + '-info'"></infobox>
-			<main-display v-bind:style="tmp[layer].componentStyles['main-display']" :layer="layer"></main-display>
-			<div v-if="tmp[layer].type !== 'none'">
-				<prestige-button v-bind:style="tmp[layer].componentStyles['prestige-button']" :layer="layer"></prestige-button>
-			</div>
-			<resource-display v-bind:style="tmp[layer].componentStyles['resource-display']" :layer="layer"></resource-display>
-			<milestones v-bind:style="tmp[layer].componentStyles.milestones" :layer="layer"></milestones>
-			<div v-if="Array.isArray(tmp[layer].midsection)">
-				<column :layer="layer" :data="tmp[layer].midsection" :key="this.$vnode.key + '-mid'"></column>
-			</div>
+			
+			
 			<clickables v-bind:style="tmp[layer].componentStyles['clickables']" :layer="layer"></clickables>
 			<buyables v-bind:style="tmp[layer].componentStyles.buyables" :layer="layer"></buyables>
 			<upgrades v-bind:style="tmp[layer].componentStyles['upgrades']" :layer="layer"></upgrades>
